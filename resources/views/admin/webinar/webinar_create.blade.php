@@ -16,7 +16,7 @@
                       <div class="row mb-3">
                         <label for="title" class="form-label col-md-2">Category</label>
                         <div class="col-md-4">
-                            <select name="category_id" id="" class="form-control">
+                            <select name="category_id" id="" class="form-select">
                                 <option value="">--Select Category--</option>
                                 @foreach($categories as $category)
                                 <option value="{{$category->id}}">{{$category->category_name}}</option>
@@ -77,7 +77,7 @@
                       <div class="row mb-3">
                           <label for="webinarType" class="form-label col-md-2">Webinar Type</label>
                           <div class="col-md-4">
-                              <select id="web_type" class="form-control" name="webinar_type">
+                              <select id="web_type" class="form-select" name="webinar_type">
                                   <option value="">Select Webinar Type</option>
                                   <option value="free">Free</option>
                                   <option value="paid">Paid</option>
@@ -85,7 +85,7 @@
                           </div>
                           <label for="webinarMode" class="form-label col-md-2">Webinar Mode</label>
                           <div class="col-md-4">
-                              <select id="webinarMode" class="form-control" name="webinar_mode">
+                              <select id="webinarMode" class="form-select" name="webinar_mode">
                                   <option value="">Select Mode</option>
                                   <option value="online">Online</option>
                                   <option value="offline">Offline</option>
@@ -133,7 +133,7 @@
                       <div class="row mb-3">
                         <label for="web_desc" class="form-label col-md-2">Status</label>
                         <div class="col-md-3">
-                            <select name="status" id="status" class="form-control">
+                            <select name="status" id="status" class="form-select">
                                 <option value="active" selected>Active</option>
                                 <option value="inactive">Inactive</option>
                             </select>

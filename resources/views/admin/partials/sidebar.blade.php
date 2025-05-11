@@ -21,7 +21,7 @@
             </a>
           </li>
         </ul>
-      </li><!-- End Forms Nav -->
+      </li><!-- End Webinar -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#user-nav" data-bs-toggle="collapse" href="#">
@@ -29,17 +29,17 @@
         </a>
         <ul id="user-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="">
+            <a href="{{ route('users.list')}}">
               <i class="bi bi-circle"></i><span>User Management</span>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{ route('roles.list')}}">
               <i class="bi bi-circle"></i><span>Role Management</span>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{ route('permissions.list')}}">
               <i class="bi bi-circle"></i><span>Permission Management</span>
             </a>
           </li>

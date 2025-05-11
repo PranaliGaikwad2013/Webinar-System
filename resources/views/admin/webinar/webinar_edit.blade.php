@@ -21,7 +21,7 @@
                       <div class="row mb-3">
                         <label for="title" class="form-label col-md-2">Category</label>
                         <div class="col-md-4">
-                            <select name="category_id" id="category_id" class="form-control">
+                            <select name="category_id" id="category_id" class="form-select">
                                 <option value="">--Select Category--</option>
                                 @foreach($categories as $category)
                                     <option value="{{ $category->id }}"
@@ -117,7 +117,7 @@
                       <div class="row mb-3">
                         <label for="webinarType" class="form-label col-md-2">Webinar Type</label>
                         <div class="col-md-4">
-                            <select id="web_type" class="form-control" name="webinar_type">
+                            <select id="web_type" class="form-select" name="webinar_type">
                                 <option value="">Select Webinar Type</option>
                                 <option value="free" {{ old('webinar_type', $webinar->web_type ?? '') == 'free' ? 'selected' : '' }}>Free</option>
                                 <option value="paid" {{ old('webinar_type', $webinar->web_type ?? '') == 'paid' ? 'selected' : '' }}>Paid</option>
@@ -128,7 +128,7 @@
                         </div>
                         <label for="webinarMode" class="form-label col-md-2">Webinar Mode</label>
                         <div class="col-md-4">
-                            <select id="webinarMode" class="form-control" name="webinar_mode">
+                            <select id="webinarMode" class="form-select" name="webinar_mode">
                                 <option value="">Select Mode</option>
                                 <option value="online" {{ old('webinar_mode', $webinar->webinar_mode ?? '') == 'online' ? 'selected' : '' }}>Online</option>
                                 <option value="offline" {{ old('webinar_mode', $webinar->webinar_mode ?? '') == 'offline' ? 'selected' : '' }}>Offline</option>
@@ -192,7 +192,7 @@
                       <div class="row mb-3">
                         <label for="web_desc" class="form-label col-md-2">Status</label>
                         <div class="col-md-3">
-                            <select name="status" id="status" class="form-control">
+                            <select name="status" id="status" class="form-select">
                                 <option value="active" {{ old('status', $webinar->status ?? '') == 'active' ? 'selected' : '' }}>Active</option>
                                 <option value="inactive" {{ old('status', $webinar->status ?? '') == 'inactive' ? 'selected' : '' }}>Inactive</option>
                             </select>
